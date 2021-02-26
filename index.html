@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Calculadora Digital</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <p></p>
+    <div class="container">
+        <div class="card mx-auto bg-light" style="width: 18rem;">
+            <div class="card-body">
+                    <input type="text" id="display" class="form-control text-right" readonly> 
+                    <br>
+                    <div class="row">
+                        <button onclick="limpar()" class="btn btn-light col-4">CE</button>
+                        <button onclick="inverter()" class="btn btn-light col-4">+/-</button>
+                        <button onclick="back()" class="btn btn-light col-4"><-</button>
+                    </div>
+                    <div class="row">
+                        <button value="7" onclick="digitar(value)" class="btn btn-light col-3">7</button>
+                        <button value="8" onclick="digitar(value)" class="btn btn-light col-3">8</button>
+                        <button value="9" onclick="digitar(value)" class="btn btn-light col-3">9</button>
+                        <button value="/" onclick="operacao(value)" class="btn btn-light col-3">/</button>
+                    </div>
+                    <div class="row">
+                        <button value="4" onclick="digitar(value)" class="btn btn-light col-3">4</button>
+                        <button value="5" onclick="digitar(value)" class="btn btn-light col-3">5</button>
+                        <button value="6" onclick="digitar(value)" class="btn btn-light col-3">6</button>
+                        <button value="*" onclick="operacao(value)" class="btn btn-light col-3">*</button>   
+                    </div>
+                    <div class="row">
+                        <button value="1" onclick="digitar(value)" class="btn btn-light col-3">1</button>
+                        <button value="2" onclick="digitar(value)" class="btn btn-light col-3">2</button>
+                        <button value="3" onclick="digitar(value)" class="btn btn-light col-3">3</button>
+                        <button value="-" onclick="operacao(value)" class="btn btn-light col-3">-</button>
+                    </div>
+                    <div class="row">
+                        <button value="0" onclick="digitar(value)" class="btn btn-light col-3">0</button>
+                        <button value="." onclick="digitar(value)" class="btn btn-light col-3">,</button>
+                        <button onclick="igual()" class="btn btn-light col-3">=</button>
+                        <button value="+" onclick="operacao(value)" class="btn btn-light col-3">+</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
